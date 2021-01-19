@@ -1,0 +1,23 @@
+            h1{
+                background-color: aquamarine;
+            }
+            .text-happy{
+                color: #16c159 !important;
+            }
+            .code-block{
+                background-color:lightseagreen;
+                color: white;
+                max-width:650px;
+                margin:25px 5px 20px 15px;
+                padding:5px 10px;
+                border-radius: 6px;
+            }
+            .nav-link.active{
+                color: cornflowerblue !important;
+            }
+            .nav-link{
+                color:darkgrey;
+            }
+            .nav-link a:hover{
+                color:  darkblue;
+            }
