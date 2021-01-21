@@ -38,11 +38,14 @@
                           <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Présentation</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Installation de git</a>
+                          <a class="nav-link" id="install-tab" data-bs-toggle="tab" href="#install" role="tab" aria-controls="install" aria-selected="false">Installation de git</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Utilisation de git et github</a>
+                          <a class="nav-link" id="usage-tab" data-bs-toggle="tab" href="#usage" role="tab" aria-controls="usage" aria-selected="false">Utilisation de git et github</a>
                         </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="advanced-tab" data-bs-toggle="tab" href="#advanced" role="tab" aria-controls="advanced" aria-selected="false">Utilisation de git et github</a>
+                          </li>
                       </ul>
                       <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -72,7 +75,7 @@
                                 <li class="list-group-item">Il n'existe que github ou il y a des alternatives ?</li>
                             </ul>
                         </div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="tab-pane fade" id="install" role="tabpanel" aria-labelledby="install-tab">
                             <h3 class="mt-5"><i class="fab fa-windows text-happy"></i> <span class="pl-4">Sous windows</span></h3>
                             <p>Installation de Git BASH... sur le site <a href="https://gitforwindows.org/">https://gitforwindows.org/</a> </p>
                             <h3 class="mt-5"><i class="fab fa-apple text-happy"></i> <span class="pl-4">Sous mac</span></h3>
@@ -94,7 +97,36 @@
                                 $ sudo apt-get install git
                             </blockquote>
                         </div>
-                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                        <div class="tab-pane fade" id="usage" role="tabpanel" aria-labelledby="usage-tab">
+                            <h3 class="mt-5"><i class="fab fa-git-square text-happy"></i> <span class="pl-4">Les principales instructions</span></h3>
+                            <p>Voici une liste non exhaustive des instructions utilisées dans git...</p>
+                            <blockquote class="blockquote code-block">
+                                $ git init
+                            </blockquote>
+                            <blockquote class="blockquote code-block">
+                                $ git clone
+                            </blockquote>
+                            <blockquote class="blockquote code-block">
+                                $ git status
+                            </blockquote>
+                            <blockquote class="blockquote code-block">
+                                $ git add (--all)
+                            </blockquote>
+                            <blockquote class="blockquote code-block">
+                                $ git commit (-m "message de commit")
+                            </blockquote>
+                            <blockquote class="blockquote code-block">
+                                $ git commit (-m "message de commit")
+                            </blockquote>
+                            <blockquote class="blockquote code-block">
+                                $ git push
+                            </blockquote>
+                            <a href="https://gist.github.com/aquelito/8596717" class="small" >Une page d'aide très bien faite en français.</a>
+                        </div>
+                        <div class="tab-pane fade" id="advanced" role="tabpanel" aria-labelledby="advanced-tab">
+                            <h3 class="mt-5"><i class="fas fa-flask text-happy"></i> <span class="pl-4">Utilisation avancée : déploiement</span></h3>
+                            <p>Il existe une multitude de solutions de déploiement, un exemple avec <a href="https://vercel.com/romaindudek/">vercel</a>...</p>
+                        </div>
                       </div>
                       
                 </div>
