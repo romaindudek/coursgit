@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cours git</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+        <style>
+            h1{
+                background-color: aquamarine;
+                padding: 3px 8px;
+            }
+            .text-happy{
+                color: #16c159 !important;
+            }
+            .nav-link.active{
+                color: cornflowerblue !important;
+            }
+            .nav-link{
+                color:darkgrey;
+            }
+            .nav-link a:hover{
+                color:  darkblue;
+            }
+            a{
+                text-decoration: none;
+            }
+            .text-warning{
+                text-transform: uppercase;
+                color: #fff !important;
+                background-color: red;
+                padding: 2px 5px;
+            }
+            .code-block{
+                background-color:lightseagreen;
+                color: white;
+                max-width:650px;
+                margin:25px 5px 20px 15px;
+                padding:5px 10px;
+                border-radius: 6px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-6">
+                    <h1>Git & GitHub</h1>
+                    <h2>Cours niveau 1</h2>
+                    <p>Vous avez entendu parler de git, mais vous ne savez pas vraiment à quoi ça sert ?</p>
+                </div>
+                <div class="col-6 text-end text-muted">
+                        <i class="fab fa-5x fa-git-square"></i>
+                </div>
+                <div class="col-12 col-lg-8 mb-5">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Présentation</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="install-tab" data-bs-toggle="tab" href="#install" role="tab" aria-controls="install" aria-selected="false">Installation de git</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="usage-tab" data-bs-toggle="tab" href="#usage" role="tab" aria-controls="usage" aria-selected="false">Utilisation de git et github</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="advanced-tab" data-bs-toggle="tab" href="#advanced" role="tab" aria-controls="advanced" aria-selected="false">Utilisation avancée</a>
+                          </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <h3 class="mt-5"><i class="fas fa-question-circle text-happy"></i> <span class="pl-4">Git, c'est quoi et ça sert à quoi ?</span>  </h3>
+                            <blockquote class="blockquote mt-4">
+                                <p class="italic">Git est un logiciel de <mark>gestion de versions décentralisé</mark>.</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Définitiion de <cite title="Source Title">Wikipedia</cite>
+                            </figcaption>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Un logiciel ? Donc, un logiciel nécessite une installation...</li>
+                                <li class="list-group-item">Un logiciel avec quelle interface ?</li>
+                                <li class="list-group-item">Pourquoi j'ai besoin de gérer des "versions" ?</li>
+                                <li class="list-group-item">Je travaille en équipe ou tout seul, je l'utilise pareil ?</li>
+                            </ul>
+                            <h3 class="mt-5"><i class="fas fa-question-circle text-happy"></i> <span class="pl-4">Du coup, GitHub, c'est quoi?</span></h3>
+                            <blockquote class="blockquote mt-4">
+                                <p class="italic">GitHub (/ɡɪt hʌb/ ; exploité sous le nom de GitHub, Inc.) est un <mark>service web d'hébergement</mark> et de gestion de développement de logiciels, utilisant le logiciel de gestion de versions Git.</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Définitiion de <cite title="Source Title">Wikipedia</cite>
+                            </figcaption>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Un Service ? Donc, c'est payant...</li>
+                                <li class="list-group-item">Est-ce qu'on peut utiliser Git sans GitHub ?</li>
+                                <li class="list-group-item">Il n'existe que github ou il y a des alternatives ?</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="install" role="tabpanel" aria-labelledby="install-tab">
+                            <h3 class="mt-5"><i class="fab fa-windows text-happy"></i> <span class="pl-4">Sous windows</span></h3>
+                            <p>Installation de Git BASH... sur le site <a href="https://gitforwindows.org/">https://gitforwindows.org/</a> </p>
+                            <h3 class="mt-5"><i class="fab fa-apple text-happy"></i> <span class="pl-4">Sous mac</span></h3>
+                            <p>Dans un terminal, taper l'instruction :</p>
+                            <blockquote class="blockquote code-block">
+                                $ git --version
+                            </blockquote>
+                            <p>Si l'instruction ne donne pas de résultat :</p>
+                            <blockquote class="blockquote code-block">
+                                $ brew install git
+                            </blockquote>
+                            <p><span class="text-warning">Attention :</span> Si brew n'est pas installé, il faut penser à installer brew : <a href="https://brew.sh/index_fr">site Brew</a></p>
+                            <h3 class="mt-5"><i class="fab fa-ubuntu text-happy"></i> <span class="pl-4">Sous les systèmes linux (ubuntu)</span></h3>
+                            <blockquote class="blockquote code-block">
+                                $ git --version
+                            </blockquote>
+                            <p>Si l'instruction ne donne pas de résultat :</p>
+                            <blockquote class="blockquote code-block">
+                                $ sudo apt-get install git
+                            </blockquote>
+                        </div>
+                        <div class="tab-pane fade" id="usage" role="tabpanel" aria-labelledby="usage-tab">
+                            <h3 class="mt-5"><i class="fab fa-git-square text-happy"></i> <span class="pl-4">Les principales instructions</span></h3>
+                            <p>Voici une liste non exhaustive des instructions utilisées dans git...</p>
+                            <blockquote class="blockquote code-block">
+                                $ git init
+                            </blockquote>
+                            <blockquote class="blockquote code-block">
+                                $ git clone
+                            </blockquote>
+                            <blockquote class="blockquote code-block">
+                                $ git status
+                            </blockquote>
+                            <blockquote class="blockquote code-block">
+                                $ git add (--all)
+                            </blockquote>
+                            <blockquote class="blockquote code-block">
+                                $ git commit (-m "message de commit")
+                            </blockquote>
+                            <blockquote class="blockquote code-block">
+                                $ git commit (-m "message de commit")
+                            </blockquote>
+                            <blockquote class="blockquote code-block">
+                                $ git push
+                            </blockquote>
+                            <a href="https://gist.github.com/aquelito/8596717" class="small" >Une page d'aide très bien faite en français.</a>
+                        </div>
+                        <div class="tab-pane fade" id="advanced" role="tabpanel" aria-labelledby="advanced-tab">
+                            <h3 class="mt-5"><i class="fas fa-flask text-happy"></i> <span class="pl-4">Utilisation avancée : déploiement</span></h3>
+                            <p>Il existe une multitude de solutions de déploiement, un exemple avec <a href="https://vercel.com/romaindudek/">vercel</a>...</p>
+                        </div>
+                      </div>
+                      
+                </div>
+                <div class="footer small mt-5 mb-2">
+                    © Romain Dudek 2021 - Tous droits réservés
+                </div>
+            </div>
+        </div>
+        
+        
+        <script src="" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+    </body>
+</html>
